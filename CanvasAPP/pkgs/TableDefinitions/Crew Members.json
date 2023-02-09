@@ -2,10 +2,6 @@
   "DatasetName": "default.cds",
   "EntityName": "Crew Members",
   "InstanceUrl": "https://acdcpt.crm4.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "rda_crewmembers",
-    "logicalName": "rda_crewmember"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://acdcpt.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('rda_crewmember')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

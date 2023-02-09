@@ -39,13 +39,6 @@
         "Social Profiles": "7bb87dfd-ec3e-4ed9-8e3e-5725d3067295",
         "Update Contact": "26843818-6508-4afe-9342-5fae2ebf15ca"
       }
-    },
-    {
-      "Kind": "default.cds_rda_crewmember_forms",
-      "Namespace": "Crew Members (Forms)",
-      "Values": {
-        "Information": "a0b7ec80-4a40-463a-a01e-b9b4c93da10e"
-      }
     }
   ]
 }
