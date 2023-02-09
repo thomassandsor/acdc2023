@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "contact",
+    "MaxGetRowsCount": 500,
     "Name": "Contacts",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -302,6 +303,7 @@
       "processid": "Process",
       "rda_contacttype": "Contact Type",
       "rda_CrewMemberContact": "Crew Member Contact",
+      "rda_occupied": "Occupied",
       "rda_rda_ship_Captain_contact": "Ships",
       "rda_skillsarms": "Arms Skills",
       "rda_skillsbrute": "Brutes Skills",
@@ -357,7 +359,9 @@
       "9c241a33-ca0b-4e50-ae92-db780d5b2a12": "Contacts: Responded to Campaigns in Last 6 Months",
       "a2d479c5-53e3-4c69-addd-802327e67a0d": "Contacts Lookup View",
       "ab582fb0-a846-453e-ad88-77f75ce91264": "My Connections",
+      "b63119d5-83a8-ed11-aad1-000d3a2aff7a": "Active Crew",
       "d33d3cdb-67a8-ed11-aad1-000d3a2aff7a": "Active Reidar Contacts",
+      "e2ca9860-82a8-ed11-aad1-000d3a2aff7a": "Active Captains",
       "eda26f1e-dbcc-40ad-91f2-ff2878d1d8d8": "Entitlement Contacts"
     }
   },
@@ -1777,6 +1781,26 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "rda_contacttype",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Occupied (Contacts)",
+    "Name": "rda_contact_rda_occupied",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "rda_occupied",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "rda_occupied",
     "RelatedEntityName": "Contacts",
     "Type": "OptionSetInfo"
   }
