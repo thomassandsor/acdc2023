@@ -108,7 +108,7 @@ Screen1 As screen:
                     'Address 1: Name': Address.Text
                 }
             )
-        Text: ="Update GAUTE"
+        Text: ="Update <3"
         X: =1156
         Y: =708
         ZIndex: =19
