@@ -1,0 +1,43 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_contact_forms",
+      "Namespace": "Contacts (Forms)",
+      "Values": {
+        "account contact card": "29de27bc-a257-4f29-99cf-bab4a84e688f",
+        "Add bank rep": "e780ff43-9441-ec11-8c62-0022482a0f64",
+        "Add child profile": "840cdb74-381c-ec11-b6e6-000d3a1b2099",
+        "BAM C1 Image Upload": "42deb377-443b-ec11-8c64-000d3a8ead20",
+        "BAM C1 Simple Specialties": "4c1a2088-e738-ec11-8c64-000d3a8ead20",
+        "BAM C1 Specialties Subgrid": "5b2374dd-8f41-ec11-8c62-0022482a0f64",
+        "BAM C2 Contact Details": "e02eb0a6-6237-ec11-8c64-0022482356e4",
+        "C1 New Specialties": "3398ebe9-613b-ec11-8c63-000d3a8fadb7",
+        "C1 Select Specialties": "3bb98e45-743b-ec11-8c63-000d3a990df2",
+        "C2 Personal Information Address": "f84bbe20-94ff-4004-8ee5-819ae42a62bb",
+        "C2 Personal Information Contact": "9a7150de-0ab2-4792-a6e3-bb1cbeb9ff2c",
+        "C2 Safety Guidelines": "52551f03-5301-4a18-8371-6dda2d1106c7",
+        "ChangePassword": "01707dcb-aeca-4b87-a9e4-a5b199a54ece",
+        "Contact": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa",
+        "contact card": "707fc57b-c5e6-471b-a180-e37ed28a38e2",
+        "Contact Card form": "bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf",
+        "Contact main form": "b84e50dc-3f42-ec11-8c62-0022482a0f64",
+        "Contact Quick Create": "661157fe-2fc9-4eaa-835f-5bfa2f7b64f7",
+        "Contact Quick Form": "bdb0ae1c-32fa-4374-b637-8dafe107bc44",
+        "Contact Reference Panel": "d880c3cf-80e2-42f3-82f9-24d040d09f17",
+        "Contact Reidar form": "8c1c48cf-66a8-ed11-aad1-000d3a2aff7a",
+        "Details": "94c781c9-6756-4e8f-abf3-ef1579b6f356",
+        "Edit child profile": "0e511009-f625-ec11-b6e5-002248252fb3",
+        "Edit Specialties": "45cba213-453b-ec11-8c64-000d3a8ead20",
+        "Information": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d",
+        "Invite Web Form": "d6190b35-9474-4098-9698-33f6627eb3bf",
+        "Live Persona Card Form": "449faa0e-f471-48ec-87d0-4719909546d2",
+        "Portal Contact": "3fb651a5-cdbf-46c9-87fb-d2c748662bb8",
+        "Profile Web Form": "0bd832d5-9d6a-456d-bdc1-21129e82cc0f",
+        "Profile Web Form - Japanese": "36cc830c-eeab-4a89-a7c9-da2ac6c451a1",
+        "Recent Cases and Entitlements": "f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e",
+        "Social Profiles": "7bb87dfd-ec3e-4ed9-8e3e-5725d3067295",
+        "Update Contact": "26843818-6508-4afe-9342-5fae2ebf15ca"
+      }
+    }
+  ]
+}

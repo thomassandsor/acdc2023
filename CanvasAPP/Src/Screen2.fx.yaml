@@ -1,0 +1,20 @@
+Screen2 As screen:
+
+    Button2 As button:
+        Text: ="Button"
+        X: =356
+        Y: =208
+        ZIndex: =1
+
+    TextInput2 As text:
+        Default: ="Text input"
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Label3 As label:
+        Text: ="Text"
+        X: =61
+        Y: =168
+        ZIndex: =3
+
