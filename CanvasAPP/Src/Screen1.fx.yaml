@@ -109,8 +109,8 @@ Screen1 As screen:
                 }
             )
         Text: ="Update"
-        X: =406
-        Y: =355
+        X: =829
+        Y: =474
         ZIndex: =19
 
     Header_1 As label:
