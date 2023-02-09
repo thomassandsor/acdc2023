@@ -1,4 +1,4 @@
-Screen1 As screen:
+Profile As screen:
 
     Image2 As image:
         Height: =768
@@ -20,12 +20,14 @@ Screen1 As screen:
 
     Image3 As image:
         Image: ='Image 002'
+        OnSelect: =Navigate(Profile,None);
         X: =60
         Y: =60
         ZIndex: =4
 
     Image4 As image:
         Image: ='Image 003'
+        OnSelect: =Navigate(Voyages, None);
         X: =60
         Y: =208
         ZIndex: =5

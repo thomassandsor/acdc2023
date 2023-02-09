@@ -112,7 +112,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Screen2"
+    "Profile",
+    "Voyages"
   ]
 }

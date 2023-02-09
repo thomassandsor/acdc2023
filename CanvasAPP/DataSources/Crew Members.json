@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "rda_crewmembers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "rda_crewmember",
+    "MaxGetRowsCount": 500,
+    "Name": "Crew Members",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "rda_Contact": "Contact",
+      "rda_crewmember_AsyncOperations": "System Jobs",
+      "rda_crewmember_BulkDeleteFailures": "Bulk Delete Failures",
+      "rda_crewmember_DuplicateBaseRecord": "Duplicate Records (rda_crewmember_DuplicateBaseRecord)",
+      "rda_crewmember_DuplicateMatchingRecord": "Duplicate Records (rda_crewmember_DuplicateMatchingRecord)",
+      "rda_crewmember_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "rda_crewmember_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "rda_crewmember_ProcessSession": "Process Sessions",
+      "rda_crewmember_SyncErrors": "Sync Errors",
+      "rda_crewmemberid": "Crew Member",
+      "rda_loot": "Loot %",
+      "rda_name": "Name",
+      "rda_Raid": "Raid",
+      "rda_raidend": "Raid End",
+      "rda_raidstart": "Raid Start",
+      "rda_rating15": "Rating (1-5)",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Crew Members",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Crew Members (Views)",
+    "Name": "_rda_crewmember_views",
+    "RelatedEntityName": "Crew Members",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "055e056a-a7fa-4483-a41e-3dd27cd158b1": "Inactive Crew Members",
+      "319060b1-e847-4729-a3f3-2f44cc61ebab": "Crew Member Associated View",
+      "3650a61c-8908-41fe-bcdf-d07814ea22b1": "Active Crew Members",
+      "6cd632fd-908c-4e0a-983e-688e5199ef21": "Crew Member Lookup View",
+      "7bcca2e8-c4a8-ed11-aad1-000d3a2aff7a": "Active Crew Contacts",
+      "c6790b7d-bc16-4e9b-be4c-f929a1351653": "Crew Member Advanced Find View",
+      "fbe2edd6-c4a8-ed11-aad1-000d3a2aff7a": "Active Crew Raids"
+    }
+  },
+  {
+    "DisplayName": "Status (Crew Members)",
+    "Name": "rda_crewmember_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Crew Members"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Crew Members",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Crew Members)",
+    "Name": "rda_crewmember_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Crew Members"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Crew Members",
+    "Type": "OptionSetInfo"
+  }
+]
