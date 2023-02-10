@@ -1,13 +1,13 @@
 Voyages As screen:
 
-    Image2_1 As image:
+    Image2_2 As image:
         Height: =768
         Image: ='Image 001'
         Width: =1126
         X: =240
         ZIndex: =1
 
-    "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(0, 0, 0, 0.28)
         Items: =First(Filter('Crew Members', Contact.emailaddress1 = User().Email))
         Layout: =Layout.Vertical
@@ -17,7 +17,7 @@ Voyages As screen:
         Y: =109
         ZIndex: =1
 
-        Title3 As label:
+        Title3_1 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -31,7 +31,7 @@ Voyages As screen:
             Y: =16
             ZIndex: =1
 
-        Subtitle3 As label:
+        Subtitle3_1 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -42,10 +42,10 @@ Voyages As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Title3.Y + Title3.Height + 2
+            Y: =Title3_1.Y + Title3_1.Height + 2
             ZIndex: =2
 
-        Body1 As label:
+        Body1_1 As label:
             Height: =Self.Size * 4
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -56,10 +56,10 @@ Voyages As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Subtitle3.Y + Subtitle3.Height + 4
+            Y: =Subtitle3_1.Y + Subtitle3_1.Height + 4
             ZIndex: =3
 
-        NextArrow3 As icon.ChevronRight:
+        NextArrow3_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -75,14 +75,14 @@ Voyages As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator3 As rectangle:
+        Separator3_1 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-    Header_2 As label:
+    Header_4 As label:
         Fill: =RGBA(237, 237, 237, 1)
         FontWeight: =FontWeight.Bold
         Height: =51
@@ -93,55 +93,55 @@ Voyages As screen:
         Y: =9
         ZIndex: =2
 
-    Image3_1 As image:
+    Image3_2 As image:
         Image: ='Image 002'
         X: =60
         Y: =60
         ZIndex: =4
 
-    Image4_1 As image:
+    Image4_2 As image:
         Image: ='Image 003'
         X: =60
         Y: =208
         ZIndex: =5
 
-    Image5_1 As image:
+    Image5_2 As image:
         Image: ='Image 004'
         X: =60
         Y: =365
         ZIndex: =6
 
-    Image6_1 As image:
+    Image6_2 As image:
         Image: ='Image 005'
         X: =60
         Y: =523
         ZIndex: =7
 
-    Label2_1 As label:
+    Label2_2 As label:
         Text: ="Profile"
         X: =35
         Y: =160
         ZIndex: =8
 
-    Label_Voyages_1 As label:
+    Label_Voyages_2 As label:
         Text: ="Voyages"
         X: =35
         Y: =325
         ZIndex: =9
 
-    Label_Capabilities_1 As label:
+    Label_Capabilities_2 As label:
         Text: ="Capabilities"
         X: =35
         Y: =483
         ZIndex: =10
 
-    Label_loot_1 As label:
+    Label_loot_2 As label:
         Text: ="Loot"
         X: =35
         Y: =623
         ZIndex: =11
 
-    Address_1 As text:
+    Address_2 As text:
         Default: |-
             =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
         FontWeight: =FontWeight.Semibold
@@ -152,7 +152,7 @@ Voyages As screen:
         Y: =485
         ZIndex: =18
 
-    Button1_1 As button:
+    Button1_2 As button:
         Fill: =RGBA(184, 0, 0, 1)
         OnSelect: |-
             =Patch(
@@ -160,7 +160,7 @@ Voyages As screen:
                 First(Filter(Contacts, contactid = First(Filter(Contacts, emailaddress1 = User().Email)).contactid)),
                 {
                     'Mobile Phone': Mobile_1.Text,
-                    'Address 1: Name': Address_1.Text
+                    'Address 1: Name': Address_2.Text
                 }
             )
         Text: ="Update <3"
@@ -168,7 +168,7 @@ Voyages As screen:
         Y: =708
         ZIndex: =19
 
-    Header_3 As label:
+    Header_5 As label:
         Fill: =RGBA(237, 237, 237, 1)
         FontWeight: =FontWeight.Bold
         Height: =51

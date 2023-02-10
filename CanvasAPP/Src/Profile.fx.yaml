@@ -1,2 +1,128 @@
 Profile As screen:
 
+    Image2_1 As image:
+        Height: =768
+        Image: ='Image 001'
+        Width: =1126
+        X: =240
+        ZIndex: =1
+
+    Header_2 As label:
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =25
+        Text: ="Welcome back " & First(Filter(Contacts, emailaddress1 = User().Email)).'Full Name'
+        Width: =541
+        X: =489
+        Y: =9
+        ZIndex: =2
+
+    Image3_1 As image:
+        Image: ='Image 002'
+        X: =60
+        Y: =60
+        ZIndex: =4
+
+    Image4_1 As image:
+        Image: ='Image 003'
+        X: =60
+        Y: =208
+        ZIndex: =5
+
+    Image5_1 As image:
+        Image: ='Image 004'
+        X: =60
+        Y: =365
+        ZIndex: =6
+
+    Image6_1 As image:
+        Image: ='Image 005'
+        X: =60
+        Y: =523
+        ZIndex: =7
+
+    Label2_1 As label:
+        Text: ="Profile"
+        X: =35
+        Y: =160
+        ZIndex: =8
+
+    Label_Voyages_1 As label:
+        Text: ="Voyages"
+        X: =35
+        Y: =325
+        ZIndex: =9
+
+    Label_Capabilities_1 As label:
+        Text: ="Capabilities"
+        X: =35
+        Y: =483
+        ZIndex: =10
+
+    Label_loot_1 As label:
+        Text: ="Loot"
+        X: =35
+        Y: =623
+        ZIndex: =11
+
+    Email As text:
+        Default: |-
+            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =15
+        Width: =423
+        X: =368
+        Y: =190
+        ZIndex: =18
+
+    Button1_1 As button:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =Patch(
+                Contacts,
+                First(Filter(Contacts, contactid = First(Filter(Contacts, emailaddress1 = User().Email)).contactid)),
+                {
+                    'Mobile Phone': Mobile_1.Text,
+                    'Address 1: Name': Email.Text
+                }
+            )
+        Text: ="Update <3"
+        X: =772
+        Y: =553
+        ZIndex: =19
+
+    Header_3 As label:
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Size: =25
+        Text: ="Welcome back " & First(Filter(Contacts, emailaddress1 = User().Email)).contactid
+        Width: =541
+        X: =489
+        Y: =76
+        ZIndex: =20
+
+    "'Mobile Phone' As text":
+        Default: |-
+            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =15
+        Width: =423
+        X: =368
+        Y: =252
+        ZIndex: =21
+
+    Address As text:
+        Default: |-
+            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =15
+        Width: =423
+        X: =368
+        Y: =314
+        ZIndex: =22
+

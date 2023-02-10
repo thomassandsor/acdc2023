@@ -303,6 +303,7 @@
       "processid": "Process",
       "rda_contacttype": "Contact Type",
       "rda_occupied": "Occupied",
+      "rda_piratename": "Pirate Name",
       "rda_rda_crewmember_Contact_contact": "Crew Members",
       "rda_rda_locationhistory_Crew_contact": "Location Histories",
       "rda_rda_ship_Captain_contact": "Ships",
