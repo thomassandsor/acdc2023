@@ -1,11 +1,20 @@
 Profile As screen:
 
-    Image2_1 As image:
-        Height: =768
-        Image: ='Image 001'
-        Width: =1126
-        X: =232
+    HtmlText1 As htmlViewer:
+        Height: =172
+        HtmlText: |-
+            ="<div style='margin:10px;width:440px;height:135px;background-color:#;box-shadow:0 3px 6px 1px #ccc; border-radius:35px'></div>"
+        Width: =528
+        X: =744
+        Y: =366
         ZIndex: =1
+
+    Image2_1 As image:
+        Height: =283
+        Image: ='Image 001'
+        Width: =461
+        X: =904
+        ZIndex: =2
 
     Header_2 As label:
         Fill: =RGBA(237, 237, 237, 1)
@@ -16,7 +25,7 @@ Profile As screen:
         Width: =541
         X: =489
         Y: =9
-        ZIndex: =2
+        ZIndex: =3
 
     Email As text:
         Default: =First(Filter(Contacts, emailaddress1 = User().Email)).Email
@@ -26,7 +35,7 @@ Profile As screen:
         Width: =423
         X: =368
         Y: =190
-        ZIndex: =18
+        ZIndex: =4
 
     Button1_1 As button:
         Fill: =RGBA(184, 0, 0, 1)
@@ -42,7 +51,7 @@ Profile As screen:
         Text: ="Update"
         X: =368
         Y: =409
-        ZIndex: =19
+        ZIndex: =5
 
     Header_3 As label:
         Fill: =RGBA(237, 237, 237, 1)
@@ -54,7 +63,7 @@ Profile As screen:
         Width: =541
         X: =489
         Y: =76
-        ZIndex: =20
+        ZIndex: =6
 
     "'Mobile Phone' As text":
         Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Mobile Phone'
@@ -64,7 +73,7 @@ Profile As screen:
         Width: =423
         X: =368
         Y: =252
-        ZIndex: =21
+        ZIndex: =7
 
     Address As text:
         Default: |-
@@ -73,9 +82,9 @@ Profile As screen:
         Height: =45
         Size: =15
         Width: =423
-        X: =368
-        Y: =314
-        ZIndex: =22
+        X: =772
+        Y: =426
+        ZIndex: =8
 
     Image3_3 As image:
         Height: =144
@@ -84,7 +93,7 @@ Profile As screen:
         Width: =224
         X: =2
         Y: =16
-        ZIndex: =23
+        ZIndex: =9
 
     Image4_3 As image:
         Height: =125
@@ -93,7 +102,7 @@ Profile As screen:
         Width: =182
         X: =13
         Y: =200
-        ZIndex: =24
+        ZIndex: =10
 
     Image5_3 As image:
         Height: =130
@@ -102,13 +111,13 @@ Profile As screen:
         Width: =144
         X: =42
         Y: =366
-        ZIndex: =25
+        ZIndex: =11
 
     Image6_3 As image:
         Image: ='Image 005'
         X: =64
         Y: =562
-        ZIndex: =26
+        ZIndex: =12
 
     Label2_3 As label:
         Align: =Align.Center
@@ -117,7 +126,7 @@ Profile As screen:
         Text: ="Profile"
         X: =35
         Y: =160
-        ZIndex: =27
+        ZIndex: =13
 
     Label_Voyages_3 As label:
         Align: =Align.Center
@@ -126,7 +135,7 @@ Profile As screen:
         Text: ="Voyages"
         X: =29
         Y: =321
-        ZIndex: =28
+        ZIndex: =14
 
     Label_Capabilities_3 As label:
         FontWeight: =FontWeight.Bold
@@ -135,7 +144,7 @@ Profile As screen:
         Width: =191
         X: =35
         Y: =491
-        ZIndex: =29
+        ZIndex: =15
 
     Label_loot_3 As label:
         Align: =Align.Center
@@ -144,5 +153,5 @@ Profile As screen:
         Text: ="Loot"
         X: =39
         Y: =662
-        ZIndex: =30
+        ZIndex: =16
 
