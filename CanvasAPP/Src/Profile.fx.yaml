@@ -4,7 +4,7 @@ Profile As screen:
         Height: =768
         Image: ='Image 001'
         Width: =1126
-        X: =240
+        X: =232
         ZIndex: =1
 
     Header_2 As label:
@@ -89,9 +89,9 @@ Profile As screen:
                     'Address 1: Name': Email.Text
                 }
             )
-        Text: ="Update <3"
-        X: =772
-        Y: =553
+        Text: ="Update"
+        X: =368
+        Y: =409
         ZIndex: =19
 
     Header_3 As label:
