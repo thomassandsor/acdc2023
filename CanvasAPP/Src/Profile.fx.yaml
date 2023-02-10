@@ -20,12 +20,14 @@ Profile As screen:
 
     Image3_1 As image:
         Image: ='Image 002'
+        OnSelect: =Navigate(Profile,None);
         X: =60
         Y: =60
         ZIndex: =4
 
     Image4_1 As image:
         Image: ='Image 003'
+        OnSelect: =Navigate(Voyages,None);
         X: =60
         Y: =208
         ZIndex: =5
@@ -67,8 +69,7 @@ Profile As screen:
         ZIndex: =11
 
     Email As text:
-        Default: |-
-            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).Email
         FontWeight: =FontWeight.Semibold
         Height: =45
         Size: =15
@@ -99,14 +100,14 @@ Profile As screen:
         Height: =51
         Size: =25
         Text: ="Welcome back " & First(Filter(Contacts, emailaddress1 = User().Email)).contactid
+        Visible: =false
         Width: =541
         X: =489
         Y: =76
         ZIndex: =20
 
     "'Mobile Phone' As text":
-        Default: |-
-            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Mobile Phone'
         FontWeight: =FontWeight.Semibold
         Height: =45
         Size: =15
