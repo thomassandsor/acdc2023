@@ -89,6 +89,7 @@ Profile As screen:
     Image4_3 As image:
         Height: =125
         Image: ='Image 003'
+        OnSelect: =Navigate(Voyages,None);
         Width: =182
         X: =13
         Y: =200
@@ -97,6 +98,7 @@ Profile As screen:
     Image5_3 As image:
         Height: =130
         Image: ='Image 004'
+        OnSelect: =Navigate(Capabilities);
         Width: =144
         X: =42
         Y: =366
