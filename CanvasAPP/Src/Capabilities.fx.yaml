@@ -4,45 +4,19 @@ Capabilities As screen:
         Height: =768
         Image: ='Image 001'
         Width: =1126
-        X: =232
+        X: =240
         ZIndex: =1
 
-    Header_4 As label:
-        Fill: =RGBA(237, 237, 237, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =51
-        Size: =25
-        Text: ="Welcome back " & First(Filter(Contacts, emailaddress1 = User().Email)).'Full Name'
-        Width: =541
-        X: =489
-        Y: =9
-        ZIndex: =2
-
     Email_1 As text:
-        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).Email
+        Align: =Align.Center
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Navigation Skills'
         FontWeight: =FontWeight.Semibold
         Height: =45
         Size: =15
-        Width: =423
-        X: =368
+        Width: =74
+        X: =548
         Y: =190
         ZIndex: =18
-
-    Button1_2 As button:
-        Fill: =RGBA(184, 0, 0, 1)
-        OnSelect: |-
-            =Patch(
-                Contacts,
-                First(Filter(Contacts, contactid = First(Filter(Contacts, emailaddress1 = User().Email)).contactid)),
-                {
-                    'Mobile Phone': Mobile_1.Text,
-                    'Address 1: Name': Email_1.Text
-                }
-            )
-        Text: ="Update"
-        X: =368
-        Y: =409
-        ZIndex: =19
 
     Header_6 As label:
         Fill: =RGBA(237, 237, 237, 1)
@@ -57,23 +31,24 @@ Capabilities As screen:
         ZIndex: =20
 
     "'Mobile Phone_1' As text":
-        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Mobile Phone'
+        Align: =Align.Center
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Arms Skills'
         FontWeight: =FontWeight.Semibold
         Height: =45
         Size: =15
-        Width: =423
-        X: =368
+        Width: =74
+        X: =548
         Y: =252
         ZIndex: =21
 
     Address_1 As text:
-        Default: |-
-            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
+        Align: =Align.Center
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Brutes Skills'
         FontWeight: =FontWeight.Semibold
         Height: =45
         Size: =15
-        Width: =423
-        X: =368
+        Width: =74
+        X: =548
         Y: =314
         ZIndex: =22
 
@@ -89,6 +64,7 @@ Capabilities As screen:
     Image4_4 As image:
         Height: =125
         Image: ='Image 003'
+        OnSelect: =Navigate(Voyages,None);
         Width: =182
         X: =13
         Y: =200
@@ -97,6 +73,7 @@ Capabilities As screen:
     Image5_4 As image:
         Height: =130
         Image: ='Image 004'
+        OnSelect: =Navigate(Capabilities,None);
         Width: =144
         X: =42
         Y: =366
@@ -143,4 +120,58 @@ Capabilities As screen:
         X: =39
         Y: =662
         ZIndex: =30
+
+    Email_2 As text:
+        Align: =Align.Center
+        Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Sailing Skills'
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =15
+        Width: =74
+        X: =548
+        Y: =127
+        ZIndex: =31
+
+    Label1 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Sailing"
+        Width: =165
+        X: =339
+        Y: =127
+        ZIndex: =32
+
+    Label1_1 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =20
+        Text: ="Navigation"
+        Width: =165
+        X: =339
+        Y: =189
+        ZIndex: =33
+
+    Label1_2 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Arms"
+        Width: =165
+        X: =339
+        Y: =252
+        ZIndex: =34
+
+    Label1_3 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Brutes"
+        Width: =165
+        X: =339
+        Y: =319
+        ZIndex: =35
 
