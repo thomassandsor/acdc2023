@@ -93,6 +93,7 @@ Voyages As screen:
     Image5_2 As image:
         Height: =130
         Image: ='Image 004'
+        OnSelect: =Navigate(Capabilities);
         Width: =144
         X: =42
         Y: =366
