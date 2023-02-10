@@ -55,7 +55,7 @@ Capabilities As screen:
     Image3_4 As image:
         Height: =144
         Image: ='Image 002'
-        OnSelect: =Navigate(Capabilities,None);
+        OnSelect: =Navigate(Profile,None);
         Width: =224
         X: =2
         Y: =16
