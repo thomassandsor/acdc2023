@@ -1,13 +1,13 @@
-Profile As screen:
+Capabilities As screen:
 
-    Image2_1 As image:
+    Image2_3 As image:
         Height: =768
         Image: ='Image 001'
         Width: =1126
         X: =232
         ZIndex: =1
 
-    Header_2 As label:
+    Header_4 As label:
         Fill: =RGBA(237, 237, 237, 1)
         FontWeight: =FontWeight.Bold
         Height: =51
@@ -18,7 +18,7 @@ Profile As screen:
         Y: =9
         ZIndex: =2
 
-    Email As text:
+    Email_1 As text:
         Default: =First(Filter(Contacts, emailaddress1 = User().Email)).Email
         FontWeight: =FontWeight.Semibold
         Height: =45
@@ -28,7 +28,7 @@ Profile As screen:
         Y: =190
         ZIndex: =18
 
-    Button1_1 As button:
+    Button1_2 As button:
         Fill: =RGBA(184, 0, 0, 1)
         OnSelect: |-
             =Patch(
@@ -36,7 +36,7 @@ Profile As screen:
                 First(Filter(Contacts, contactid = First(Filter(Contacts, emailaddress1 = User().Email)).contactid)),
                 {
                     'Mobile Phone': Mobile_1.Text,
-                    'Address 1: Name': Email.Text
+                    'Address 1: Name': Email_1.Text
                 }
             )
         Text: ="Update"
@@ -44,7 +44,7 @@ Profile As screen:
         Y: =409
         ZIndex: =19
 
-    Header_3 As label:
+    Header_6 As label:
         Fill: =RGBA(237, 237, 237, 1)
         FontWeight: =FontWeight.Bold
         Height: =51
@@ -56,7 +56,7 @@ Profile As screen:
         Y: =76
         ZIndex: =20
 
-    "'Mobile Phone' As text":
+    "'Mobile Phone_1' As text":
         Default: =First(Filter(Contacts, emailaddress1 = User().Email)).'Mobile Phone'
         FontWeight: =FontWeight.Semibold
         Height: =45
@@ -66,7 +66,7 @@ Profile As screen:
         Y: =252
         ZIndex: =21
 
-    Address As text:
+    Address_1 As text:
         Default: |-
             =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
         FontWeight: =FontWeight.Semibold
@@ -77,16 +77,16 @@ Profile As screen:
         Y: =314
         ZIndex: =22
 
-    Image3_3 As image:
+    Image3_4 As image:
         Height: =144
         Image: ='Image 002'
-        OnSelect: =Navigate(Profile,None);
+        OnSelect: =Navigate(Capabilities,None);
         Width: =224
         X: =2
         Y: =16
         ZIndex: =23
 
-    Image4_3 As image:
+    Image4_4 As image:
         Height: =125
         Image: ='Image 003'
         Width: =182
@@ -94,7 +94,7 @@ Profile As screen:
         Y: =200
         ZIndex: =24
 
-    Image5_3 As image:
+    Image5_4 As image:
         Height: =130
         Image: ='Image 004'
         Width: =144
@@ -102,13 +102,13 @@ Profile As screen:
         Y: =366
         ZIndex: =25
 
-    Image6_3 As image:
+    Image6_4 As image:
         Image: ='Image 005'
         X: =64
         Y: =562
         ZIndex: =26
 
-    Label2_3 As label:
+    Label2_4 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Size: =20
@@ -117,7 +117,7 @@ Profile As screen:
         Y: =160
         ZIndex: =27
 
-    Label_Voyages_3 As label:
+    Label_Voyages_4 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Size: =20
@@ -126,7 +126,7 @@ Profile As screen:
         Y: =321
         ZIndex: =28
 
-    Label_Capabilities_3 As label:
+    Label_Capabilities_4 As label:
         FontWeight: =FontWeight.Bold
         Size: =20
         Text: ="Capabilities"
@@ -135,7 +135,7 @@ Profile As screen:
         Y: =491
         ZIndex: =29
 
-    Label_loot_3 As label:
+    Label_loot_4 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Size: =20

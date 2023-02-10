@@ -8,13 +8,14 @@ Voyages As screen:
         ZIndex: =1
 
     "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Fill: =RGBA(0, 0, 0, 0.28)
+        Fill: =RGBA(0, 0, 0, 0.58)
+        Height: =600
         Items: =First(Filter('Crew Members', Contact.emailaddress1 = User().Email))
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =Min(168, Self.Height - 60)
-        X: =324
-        Y: =109
+        TemplateSize: =124
+        X: =439
+        Y: =51
         ZIndex: =1
 
         Title3_1 As label:
@@ -40,30 +41,16 @@ Voyages As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Raid Start'
+            Text: =ThisItem.'Created On'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =Title3_1.Y + Title3_1.Height + 2
             ZIndex: =2
 
-        Body1_1 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =Self.Size * 4
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.'Raid End'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =Subtitle3_1.Y + Subtitle3_1.Height + 4
-            ZIndex: =3
-
         NextArrow3_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(255, 255, 255, 1)
             Height: =60
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
@@ -79,97 +66,78 @@ Voyages As screen:
             ZIndex: =4
 
         Separator3_1 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-    Header_4 As label:
-        Fill: =RGBA(237, 237, 237, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =51
-        Size: =25
-        Text: =First(Filter(Contacts, emailaddress1 = User().Email)).'Full Name'
-        Width: =293
-        X: =656
-        Y: =9
-        ZIndex: =2
-
     Image3_2 As image:
+        Height: =144
         Image: ='Image 002'
-        X: =60
-        Y: =60
+        Width: =224
+        X: =2
+        Y: =16
         ZIndex: =4
 
     Image4_2 As image:
+        Height: =125
         Image: ='Image 003'
-        X: =60
-        Y: =208
+        Width: =182
+        X: =13
+        Y: =200
         ZIndex: =5
 
     Image5_2 As image:
+        Height: =130
         Image: ='Image 004'
-        X: =60
-        Y: =365
+        Width: =144
+        X: =42
+        Y: =366
         ZIndex: =6
 
     Image6_2 As image:
         Image: ='Image 005'
-        X: =60
-        Y: =523
+        X: =64
+        Y: =562
         ZIndex: =7
 
     Label2_2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Size: =20
         Text: ="Profile"
         X: =35
         Y: =160
         ZIndex: =8
 
     Label_Voyages_2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Size: =20
         Text: ="Voyages"
-        X: =35
-        Y: =325
+        X: =29
+        Y: =321
         ZIndex: =9
 
     Label_Capabilities_2 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =20
         Text: ="Capabilities"
+        Width: =191
         X: =35
-        Y: =483
+        Y: =491
         ZIndex: =10
 
     Label_loot_2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Size: =20
         Text: ="Loot"
-        X: =35
-        Y: =623
+        X: =39
+        Y: =662
         ZIndex: =11
-
-    Address_2 As text:
-        Default: |-
-            =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
-        FontWeight: =FontWeight.Semibold
-        Height: =45
-        Size: =15
-        Width: =423
-        X: =943
-        Y: =485
-        ZIndex: =18
-
-    Button1_2 As button:
-        Fill: =RGBA(184, 0, 0, 1)
-        OnSelect: |-
-            =Patch(
-                Contacts,
-                First(Filter(Contacts, contactid = First(Filter(Contacts, emailaddress1 = User().Email)).contactid)),
-                {
-                    'Mobile Phone': Mobile_1.Text,
-                    'Address 1: Name': Address_2.Text
-                }
-            )
-        Text: ="Update <3"
-        X: =1156
-        Y: =708
-        ZIndex: =19
 
     Header_5 As label:
         Fill: =RGBA(237, 237, 237, 1)
