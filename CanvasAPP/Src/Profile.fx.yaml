@@ -1,19 +1,20 @@
 Profile As screen:
 
-    HtmlText1 As htmlViewer:
-        Height: =172
-        HtmlText: |-
-            ="<div style='margin:10px;width:440px;height:135px;background-color:#;box-shadow:0 3px 6px 1px #ccc; border-radius:35px'></div>"
-        Width: =528
-        X: =744
-        Y: =366
+    Image2_1 As image:
+        Height: =366
+        Image: ='Image 001'
+        Width: =621
+        X: =684
+        Y: =321
         ZIndex: =1
 
-    Image2_1 As image:
-        Height: =283
-        Image: ='Image 001'
-        Width: =461
-        X: =904
+    HtmlText1 As htmlViewer:
+        Height: =100
+        HtmlText: |-
+            ="<div style='margin:10px;width:440px;height:50px;background-color:#fff;box-shadow:0 3px 6px 1px #ccc; border-radius:35px'></div>"
+        Width: =528
+        X: =753
+        Y: =429
         ZIndex: =2
 
     Header_2 As label:
@@ -50,7 +51,7 @@ Profile As screen:
             )
         Text: ="Update"
         X: =368
-        Y: =409
+        Y: =428
         ZIndex: =5
 
     Header_3 As label:
@@ -76,14 +77,15 @@ Profile As screen:
         ZIndex: =7
 
     Address As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
         Default: |-
             =First(Filter(Contacts, emailaddress1 = User().Email)).'Address 1: Name'
         FontWeight: =FontWeight.Semibold
-        Height: =45
+        Height: =42
         Size: =15
-        Width: =423
-        X: =772
-        Y: =426
+        Width: =205
+        X: =791
+        Y: =449
         ZIndex: =8
 
     Image3_3 As image:
